@@ -6,3 +6,4 @@
 .quarto
 sce_chimera.rds
 sce_chimera_procesed.rds.rds
+sce_chimera_procesed.rds
