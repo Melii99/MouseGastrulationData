@@ -36,3 +36,10 @@ library("edgeR") ## para expresión diferencial
 ## Descargar los datos desde bioconductor y guardar el SCE
 library("MouseGastrulationData")
 sce.chimera <- WTChimeraData(samples = 5:10)
+
+## Size in Gb
+lobstr::obj_size(sce.chimera)
+# 1.01 GB
+
+## Guardar el objeto sce en un archivo .rds
+saveRDS(sce.chimera, file = "sce_chimera.rds")
